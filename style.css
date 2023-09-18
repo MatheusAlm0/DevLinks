@@ -27,11 +27,16 @@
 body {
   background: var(--bg-url) no-repeat top center/cover;
   height: 100vh;
+  overflow: hidden;
 }
 
 body * {
   font-family: "Inter", sans-serif;
   color: var(--text-color);
+}
+
+.info{
+  font-size: 13px;
 }
 
 #container {
@@ -130,12 +135,15 @@ ul li a {
   font-weight: 500;
 
   transition: background 0.2s;
+  transition: .3s;
 }
 
 /* pseudo-selector */
 ul li a:hover {
   background: var(--surface-color-hover);
   border: 1.5px solid var(--text-color);
+  transform: scale(1.05);
+  transition: .3s;
 }
 
 /* social links */
